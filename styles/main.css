@@ -1,0 +1,135 @@
+body {
+  margin: 0 auto;
+}
+
+header {
+  color: #ffffff;
+  background-color: #5FB404;
+  padding: 25px 0;
+  box-shadow: 0 0 20px black;
+  z-index: 5;
+}
+
+header h1 {
+  padding: 0;
+  margin: 0;
+  text-shadow: 0 0 15px black;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+}
+
+main {
+  padding: 50px 0;
+}
+
+.home {
+  padding: 150px 0;
+  background-image: url('../img/architecture-1122359_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 20px black;
+}
+
+.home h2 {
+  background-color: #5FB404;
+  padding: 20px;
+  margin-bottom: 0;
+  box-shadow: 0 0 20px black;
+}
+
+.home p {
+  background-color: #91E735;
+  padding: 20px;
+  margin-top: 0;
+  box-shadow: 0 0 20px black;
+}
+
+.home .btn {
+  padding: 10px;
+  border-radius: 0;
+  background-color: #5FB404;
+  transition: all 1s;
+  box-shadow: 0 0 5px black;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.home .btn:hover {
+  color: white;
+  box-shadow: 0 0 10px black;
+}
+
+footer {
+  background-color: #222222;
+  color: white;
+  padding: 50px;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.info-text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.dashboard {
+  min-height: 500px;
+}
+
+article {
+  padding: 20px;
+}
+
+.inner {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  cursor: pointer;
+}
+
+.inner:hover {
+  box-shadow: 0 0 20px black;
+}
+
+.dark {
+  background-color: #6E6E6E;
+  color: #ffffff;
+}
+
+.tolate {
+  background-color: #FA5858;
+  color: #ffffff;
+}
+
+.share {
+  background-color: #5882FA;
+  color: #ffffff;
+}
+
+.preview {
+  position: fixed;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px black;
+  padding: 50px;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+  border-top: 5px solid #5FB404;
+}

@@ -1,0 +1,85 @@
+So geht's:
+
+- SQL Datenbanken aus Ordner sql importieren (PHP MYAdmin)
+- Server starten
+- Datei in das root Verzeichnis legen.
+
+-User registrieren
+- anmelden
+- Aufgabe erstellen (ggf. Vorstufe erstellen)
+- Erledigen / Löschen / teilen
+- Abmelden
+
+
+
+================================================================================
+Name: Master Plan App
+Autor: Calvin Muthig
+Web: calvin-muthig.de
+Email: calvin.muthig[at]icloud.com
+Produkt ID: 5247969-16
+================================================================================
+
+#Info:
+======
+Benutzte Frameworks:
+jQuery (jquery.org)
+AngularJS 1 (angularjs.org)
+Bootstrap (getbootstrap.com)
+
+
+Beschreibung:
+=============
+https://www.it-talents.de/foerderung/code-competition/code-competition-12-2016-2
+Wettbewerb.
+
+MasterPlan bietet dir die Möglichkeit Aufgaben zu erstellen und zu erledigen.
+Außerdem kannst du öffentliches mit anderen Nutzern teilen.
+
+Funktionen:
+=============
+Login -> Melde dich an um den Service nutzen zu können.
+=> Dateien: pages/login.php, backend/login.php
+
+Register -> Registriere dich um den Service nutzen zu können.
+=> Dateien: pages/register.php, backend/newUser.php, backend/classes/users.php
+
+Logout -> Abmelden
+=> Dateien: module/logout.php
+
+Create -> Erstelle eine neue Aufgabe
+=> Dateien: module/create.php, backend/createPost.php, backend/classes/posts.php
+
+Delete -> Lösche eine Aufgabe
+=> Dateien: backend/delete.php
+
+Done -> Erledige eine Aufgabe
+=> Dateien: backend/done.php
+
+Share -> Teile Inhalte mit anderen Benutzern, diese können dein Beitrag dann
+sehen.
+=> Dateien: backend/share.php, backend/shareThis.php, backend/classes/shares.php
+
+Show -> Zeige die Aufgabe.
+=> Dateien: module/show-done.php, module/show-share.php, module/show.php,
+pages/dashboard.php
+
+_______
+HOME : pages/home.php
+
+
+Zum Thema Sicherheit:
+=====================
+
+Die 'Shares' werden in einer neuen MYSQL Tabelle mit ID und Nutzername
+gespeichert (shares). So werden allen freigegebenen Nutzern die Aufgaben
+gezeigt, doch bearbeiten kann sie nur der Ersteller (creator).
+
+Man muss sich anmelden um den Service nutzen zu können. Abfrage
+Username == Passwort.
+
+Um sich die Aufgaben anzuschauen benötigt man die ID und den Nutzernamen
+in der Session .
+
+Um Aufgaben zu erledigen/ zu löschen benötigt man die ID, den Title und den
+Nutzernamen aus der Session.
